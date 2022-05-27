@@ -1,0 +1,145 @@
+/* 
+_______________________
+        Header 
+*/
+body {
+	position: relative;
+}
+.header {
+    background-color: rgba(255, 255, 255, 0);    /* Màu trong suốt */  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-index_header);
+    transition: all .2s linear;
+}
+.header__navbar {
+    height: var(--header__navbar-height);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navbar-logo,
+.header__navbar-list,
+.header__navbar-list--mobile,
+.header__navbar-logo--mobile {
+    list-style: none;
+    padding-left: 0;
+}
+.header__navbar-item {
+    display: inline-block;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+    margin: 0 40px;
+}
+.header__navbar-item:last-child {
+    margin-right: 0;
+}
+.header__navbar__link {
+    color: #fff;
+}
+#logo {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#logo--mobile {
+    color: var(--color-theme);
+}
+.open__mobile-navbar {
+    display: none;
+}
+#open__mobile-navbar__icon {
+    font-size: 1.6rem;
+    color: #fff;
+}
+#close__mobile-navbar__icon {
+    font-size: 1.6rem;
+    color: black;
+}
+.header__navbar--mobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    max-width: 500px;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    border-left: 1px solid rgba(196, 194, 194, 0.4);;
+    /*z-index: var(--z-index_Mobile_header);*/
+}
+
+.header__navbar-logo--mobile {
+    height: var(--header__navbar-height);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(196, 194, 194, 0.4);
+    margin-bottom: -1px;
+}
+.header__navbar-list--mobile {
+    margin: 0;
+    padding: 20px 15px;
+}
+.header__navbar-item--mobile {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+}
+#header__navbar--mobile__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: var(--z-index_Mobile_header_overlay);
+    transition: 0.5s;
+}
+@media screen and (max-width: 760px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header__navbar-list {
+        display: none;
+    }
+    .open__mobile-navbar {
+        display: block;
+    }
+}
+
+/*  
+_______________________
+        Footer 
+*/
+.footer{
+    background-image: linear-gradient(135deg, rgb(38, 78, 255) 0%, rgb(11, 97, 255) 54%);
+    padding:0.8rem;
+    color:white;
+    text-align:center;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(196, 194, 194, 0.7);
+}
+.footer a {
+    color: white;
+}
+.footer__content {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footer__copyright {
+    bottom: 10%;
+    margin-bottom: 2%;
+}

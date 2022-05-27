@@ -1,0 +1,214 @@
+const FlashcardForm = [
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/uEdDupl.jpg",
+				word: "Assess",
+				wordType: "(v)",
+				phonetics: "/əˈsɛs/",
+				audioName: "assess",
+				example: "Ex: We tried to assess his suitability for this job."
+			},
+			back: {
+				meaning: "Đánh giá"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/XWWlCPC.jpg",
+				word: "Assume",
+				wordType: "(v)",
+				phonetics: "/əˈsjuːm/",
+				audioName: "assume",
+				example: "Ex: Let's assume (that) they're coming and make plans on that basis."
+			},
+			back: {
+				meaning: "Giả định"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/J2cKHvy.jpg",
+				word: "Baffle",
+				wordType: "(v)",
+				phonetics: "/ˈbæfl/",
+				audioName: "baffle",
+				example: "Ex: She was completely baffled by his strange behaviour."
+			},
+			back: {
+				meaning: "Làm rối, làm trở ngại"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/8uxQI8a.jpg",
+				word: "Biased",
+				wordType: "(adj)",
+				phonetics: "/ˈbaɪəst/",
+				audioName: "biased",
+				example: "Ex: The newspapers gave a very biased report of the meeting."
+			},
+			back: {
+				meaning: "Thiên vị"
+			}
+		},
+		
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/e3g4UO7.jpg",
+				word: "Concentrate",
+				wordType: "(v)",
+				phonetics: "/ˈkɒn.sən.treɪt/",
+				audioName: "concentrate",
+				example: "Ex: I can't concentrate on my work with all that noise."
+			},
+			back: {
+				meaning: "Tập trung"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/l5ZUIdy.png",
+				word: "Consider",
+				wordType: "(v)",
+				phonetics: "/kənˈsɪd.ɚ/",
+				audioName: "consider",
+				example: "Ex: We're considering selling the house."
+			},
+			back: {
+				meaning: "Cân nhắc"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/ROfRXXE.jpg",
+				word: "Contemplate",
+				wordType: "(v)",
+				phonetics: "/ˈkɒn.təm.pleɪt/",
+				audioName: "contemplate",
+				example: "Ex: I'm contemplating going abroad for a year."
+			},
+			back: {
+				meaning: "Thưởng ngoạn"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/HmE1IMU.jpg",
+				word: "Cynical",
+				wordType: "(adj)",
+				phonetics: "/ˈsɪn.ɪ.kəl/",
+				audioName: "cynical",
+				example: "Ex: I've always been deeply cynical about politicians."
+			},
+			back: {
+				meaning: "Hoài nghi"
+			}
+		},	
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/qwykQfx.jpg",
+				word: "Deduce",
+				wordType: "(v)",
+				phonetics: "/dɪˈduːs/",
+				audioName: "deduce",
+				example: "Ex: We cannot deduce very much from these figures."
+			},
+			back: {
+				meaning: "Suy luận"
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/03i40yw.jpg",
+				word: "Deliberate",
+				wordType: "(v)",
+				phonetics: "/dɪˈlɪb.ɚ.ət/",
+				audioName: "deliberate",
+				example: "Ex: We made a deliberate decision to live apart for a while."
+			},
+			back: {
+				meaning: "Cố ý, chủ tâm, có tính toán "
+			}
+		}
+	]
+const QuizForm = [
+		{
+			question: "Preferring one person, thing or idea to another in a way that is unfair:",
+			choices: {
+				A: 'dubious',
+				B: 'biased',
+				C: 'faith',
+				D: 'baffle',
+			},
+			correctAnswer: 'B'
+		},
+		{
+			question: "To calculate what something costs or is worth:",
+			choices: {
+				A: 'assess',
+				B: 'access',
+				C: 'prossess',
+				D: 'process',
+			},
+			correctAnswer: 'A'
+		},
+		{
+			question: "To think very carefully about something for a long time:",
+			choices: {
+				A: 'grasp',
+				B: 'hunch',
+				C: 'deduce',
+				D: 'contemplate',
+			},
+			correctAnswer: 'D'
+		},
+		{
+			question: "To believe that something is true, even though no one has told you or even though you have no proof:",
+			choices: {
+				A: 'concentrate',
+				B: 'assume',
+				C: 'justify',
+				D: 'reflect',
+			},
+			correctAnswer: 'B'
+		}
+	]
+
+const ListenQuizForm = [
+		{
+			audioName: "assume",
+			key: "assume"
+		},
+		{
+			audioName: "biased",
+			key: "biased"
+		},
+		{
+			audioName: "deliberate",
+			key: "deliberate"
+		},
+		{
+			audioName: "concentrate",
+			key: "concentrate"
+		},
+		{
+			audioName: "assess",
+			key: "assess"
+		},
+		{
+			audioName: "deduce",
+			key: "deduce"
+		},
+		{
+			audioName: "cynical",
+			key: "cynical"
+		},
+		{
+			audioName: "consider",
+			key: "consider"
+		},
+		{
+			audioName: "baffle",
+			key: "baffle"
+		}
+	]

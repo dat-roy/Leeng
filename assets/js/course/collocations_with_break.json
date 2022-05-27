@@ -1,0 +1,201 @@
+FlashcardForm = [
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/7HjHGB8.png",
+				word: "Break a leg!",
+				wordType: "(collo.)",
+				phonetics: "/breɪk ə lɛg/",
+				audioName: "break a leg",
+				example: "Ex: 'Break a leg!' I shouted out to him before he rushed in for his auditions."
+			},
+			back: {
+				meaning: "Chúc may mắn."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/sydg4XW.jpg",
+				word: "Get the breaks",
+				wordType: "(collo.)",
+				phonetics: "/gɛt ðə breɪks/",
+				audioName: "get the breaks",
+				example: "Ex: People become wealthy because they get the breaks."
+			},
+			back: {
+				meaning: "Gặp cơ hội thuận lợi."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/fGOuf16.png",
+				word: "Break a record",
+				wordType: "(collo.)",
+				phonetics: "/breɪk ə ˈrɛkɔːd/",
+				audioName: "break a record",
+				example: "Ex: He broke the record for the high jump."
+			},
+			back: {
+				meaning: "Phá kỷ lục."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/RW1XZqZ.jpg",
+				word: "Break the law",
+				wordType: "(collo.)",
+				phonetics: "/breɪk ðə lɔː/",
+				audioName: "break the law",
+				example: "Ex: If someone breaks the law, who has the right to punish him, and why?"
+			},
+			back: {
+				meaning: "Phạm luật."
+			}
+		},
+		
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/SRDZC9g.jpg",
+				word: "Break one's word",
+				wordType: "(collo.)",
+				phonetics: "/breɪk wʌnz wɜːd/",
+				audioName: "break ones word",
+				example: "Ex: Tom said he'd help us move, but he broke his word and failed to show."
+			},
+			back: {
+				meaning: "Thất hứa."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/KldAQ9e.jpg",
+				word: "Break the peace",
+				wordType: "(collo.)",
+				phonetics: "/breɪk ðə piːs/",
+				audioName: "break the peace",
+				example: "Ex: The country has broken the peace agreement."
+			},
+			back: {
+				meaning: "Gây rối trật tự chung."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/zJAkpUr.jpg",
+				word: "Break the news",
+				wordType: "(collo.)",
+				phonetics: "/breɪk ðə njuːz/",
+				audioName: "break the news",
+				example: "Ex: The doctor broke the news to the family that my grandmother had cancer."
+			},
+			back: {
+				meaning: "Báo tin."
+			}
+		},
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/qoQCjCi.png",
+				word: "Break one's heart",
+				wordType: "(collo.)",
+				phonetics: "/breɪk wʌnz hɑːt/",
+				audioName: "break ones heart",
+				example: "Ex: It breaks my heart to see him so unhappy."
+			},
+			back: {
+				meaning: "Làm đau lòng"
+			}
+		},	
+		{
+			front: {
+				imageSrc: "https://i.imgur.com/1POCdkt.png",
+				word: "Break one's will",
+				wordType: "(collo.)",
+				phonetics: "/breɪk wʌnz wɪl/",
+				audioName: "break ones will",
+				example: "Ex: They tried to break his will but he resisted.."
+			},
+			back: {
+				meaning: "Làm nhụt chí."
+			}
+		}
+	];
+QuizForm = [
+		{
+			question: "Preferring one person, thing or idea to another in a way that is unfair:",
+			choices: {
+				A: 'dubious',
+				B: 'biased',
+				C: 'faith',
+				D: 'baffle',
+			},
+			correctAnswer: 'B'
+		},
+		{
+			question: "To calculate what something costs or is worth:",
+			choices: {
+				A: 'assess',
+				B: 'access',
+				C: 'prossess',
+				D: 'process',
+			},
+			correctAnswer: 'A'
+		},
+		{
+			question: "To think very carefully about something for a long time:",
+			choices: {
+				A: 'grasp',
+				B: 'hunch',
+				C: 'deduce',
+				D: 'contemplate',
+			},
+			correctAnswer: 'D'
+		},
+		{
+			question: "To believe that something is true, even though no one has told you or even though you have no proof:",
+			choices: {
+				A: 'concentrate',
+				B: 'assume',
+				C: 'justify',
+				D: 'reflect',
+			},
+			correctAnswer: 'B'
+		}
+	];
+
+ListenQuizForm = [
+		{
+			audioName: "assume",
+			key: "assume"
+		},
+		{
+			audioName: "biased",
+			key: "biased"
+		},
+		{
+			audioName: "deliberate",
+			key: "deliberate"
+		},
+		{
+			audioName: "concentrate",
+			key: "concentrate"
+		},
+		{
+			audioName: "assess",
+			key: "assess"
+		},
+		{
+			audioName: "deduce",
+			key: "deduce"
+		},
+		{
+			audioName: "cynical",
+			key: "cynical"
+		},
+		{
+			audioName: "consider",
+			key: "consider"
+		},
+		{
+			audioName: "baffle",
+			key: "baffle"
+		}
+	];

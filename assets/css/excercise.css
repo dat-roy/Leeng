@@ -1,0 +1,240 @@
+#logo,
+#logo--mobile,
+#open__mobile-navbar__icon,
+#close__mobile-navbar__icon {
+    color: var(--color-theme);
+}
+.header__navbar__link {
+    color: var(--text-color);
+}
+.bg-transparent {
+    background: transparent;
+    color: var(--color-theme);
+}
+/*-------*/	
+html {
+    overflow-x: hidden;
+}
+
+.vocabulary-course {
+	width: 100%;
+	height: calc(100vh + 50px);
+	position: relative;
+	overflow-x: hidden;
+	margin-bottom: 50px;
+}
+.js-tab,
+.js-tab__disabled {
+	position: absolute;
+	top: 10%;
+	left: 100%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+	transition: all 0.5s ease-in-out;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: var(--header__navbar-height);
+}
+.show {
+	left: 50%;
+    opacity: 1;
+	visibility: visible;
+}
+.hide {
+	left: 30%;
+    opacity: 0;
+	visibility: hidden;
+}
+.tab__header, 
+.tab__body,
+.tab__footer{
+	width: 100%;
+	margin: 2%;
+}
+.tab__header {
+	margin-top: 8%;
+	font-size: 24px;
+	color: var(--color-theme);
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-align: center;
+}
+@media screen and (max-width: 400px) {
+	.tab__header {
+		font-size: 20px;
+	}
+}
+.tab__footer {
+	margin-bottom: 8%;
+	text-align: center;
+}
+
+.button-group {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+.btn-next,
+.btn-check {
+	width: 110px;
+	height: 32px;
+	font-weight: 500;
+	display: block;
+	border:none;
+	cursor:pointer;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2px;
+	border-radius: 1000px;
+}
+.btn-check {
+	margin-right: 20px;
+	background-color: var(--cyan);
+}
+.btn-next {
+	background-color: var(--teal);
+}
+.btn-disabled {
+	background-color: #bec0c1;
+	pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+	.btn-check {
+		margin-right: 70px;
+	}
+}
+}
+.btn-next:hover,
+.btn-check:hover{
+	background: #65f8af;
+}
+
+.correct {
+	border: 1px solid #3ae461;
+	background-color: #c8ffd5;
+}
+.wrong {
+	border: 1px solid #ff7e7f;
+	background-color: #ffd3d3;
+}
+
+
+.btn-start {
+background-image:linear-gradient(to right, #10c256, #00b3a2, #009cf8, #0078ff, #5d12eb);
+background-image: linear-gradient(to left, #10ffd5, #00fcb5, #00f88f, #00f260, #38eb12);
+margin-top: 50px;
+padding: 15px 50px;
+font-size: 22px;
+letter-spacing: 2px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+border-radius: 100px;
+display: block;
+outline: none;
+border: none;
+cursor: pointer;
+}
+
+.btn-start:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+outline: none;
+}
+
+.header-lesson {
+	margin-top: 20vh;
+	color: var(--green);
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+}
+.header-lesson--name {
+	color: var(--teal);
+	font-size: 28px;
+	font-weight: 700;
+}
+.ending {
+	margin-top: 20vh;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+}
+.ending span:first-child,
+.ending span:last-child {
+	display: block;
+	margin: 16px 0;
+	color: #1c9837;
+}
+.ending .x {
+	color: #1c9837;
+	font-weight: 800;
+}
+.ending .y {
+	display: block;
+	margin: 16px auto;
+	width: 180px;
+	height: 180px;
+}
+@media screen and (max-width: 675px) {
+	.header-lesson,
+	.ending	{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.ending .x {
+		font-size: 22px;
+	}
+	.header-lesson--name {
+		font-size: 20px;
+	}
+}
+
+
+.fade-in {
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 5s;
+-o-animation: fadeIn ease 5s;
+-ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}

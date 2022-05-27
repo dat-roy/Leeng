@@ -1,0 +1,19 @@
+#logo,
+#logo--mobile,
+#open__mobile-navbar__icon,
+#close__mobile-navbar__icon {
+    color: var(--color-theme);
+}
+.header__navbar__link {
+    color: var(--text-color);
+}
+.bg-transparent {
+    background: transparent;
+    color: var(--color-theme);
+}
+.course-list {
+    height: 1000px;
+    width: 100%;
+    padding-top: calc(var(--header__navbar-height) + 40px);
+}
+

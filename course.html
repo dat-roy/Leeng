@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leeng - Vocabulary</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180595450-1"></script>
+    <script>
+        window.dataLayer=window.dataLayer || []; 
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('config', 'UA-180595450-1');
+    </script> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/memory_card_game.css">
+	<link rel="stylesheet" href="./assets/css/flashcard.css">
+	<link rel="stylesheet" href="./assets/css/quiz.css">
+	<link rel="stylesheet" href="./assets/css/listen_quiz.css">
+    <link rel="stylesheet" href="./assets/css/excercise.css">
+	<style>
+	body{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		}
+	</style>
+	<script type=”text/JavaScript”>
+		function killCopy(e){
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		document.onselectstart = new Function ("return false")
+		if (window.sidebar){
+		document.onmousedown=killCopy
+		document.onclick=reEnable
+		}
+	</script>
+</head>
+<body>
+        <header class="header grid sticky" id="myHeader">
+            <nav class="header__navbar">
+                <ul class="header__navbar-logo">
+                    <li>
+                        <a href="index.html" id="logo">
+                            <h1 class="responsive-font--logo">LEENG</h1>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar__link">Giới Thiệu</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="course.html" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar__link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="open__mobile-navbar">
+                    <a href="javascript:void(0);" id="open__mobile-navbar__icon" onclick="openMobileNav()"> 
+                        <i class="fa fa-bars"></i>
+                        <!--&#9776;-->
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="header__navbar--mobile">
+                <ul class="header__navbar-logo--mobile">
+                    <li>
+                        <a href="index.html" id="logo--mobile">
+                            <h1 class="responsive-font--logo">LEENG</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="close__mobile-navbar">
+                            <a href="javascript:void(0);" id="close__mobile-navbar__icon" onclick="closeMobileNav()">
+                                <i class="fa fa-close"></i>
+                                <!--&times;-->
+                            </a>
+                        </div>
+                    </li>
+                </ul> 
+                <ul class="header__navbar-list--mobile">
+                    <li class="header__navbar-item--mobile">
+                        <a href="" class="header__navbar__link--mobile">Giới Thiệu</a>
+                    </li>
+                    <li class="header__navbar-item--mobile">
+                        <a href="course.html" class="header__navbar__link--mobile">Khóa học</a>
+                    </li>
+                    <li class="header__navbar-item--mobile">
+                        <a href="" class="header__navbar__link--mobile">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--<div id="header__navbar--mobile__overlay"></div>-->
+        </header>
+		
+        <section class="vocabulary-course">
+			<div class="js-tab first-tab show">
+				<span class="header-lesson">Vocabulary Topic:<br><span class="header-lesson--name">Thinking And Learning (C1 & C2)</span></span>
+				<button class="btn-start" onclick="nextTab()">start</button>
+			</div>
+        </section>
+        
+        <footer class="footer grid bg-transparent">
+            <div class="footer__content">
+                
+            </div>
+            <p class="footer__copyright">
+                Copyright &copy 2020 Leeng
+            </p>
+        </footer>
+  
+
+    <script src="./assets/js/open_or_close_nav.js"></script>
+	<!---	Hide And Show Tabs   --->
+    <script> 
+        function nextTab(){
+			var thisTab = document.querySelector(".js-tab");
+			var nextTab = document.querySelectorAll(".js-tab")[1];
+			if (thisTab.classList.contains("first-tab") == true )
+			{
+				thisTab.classList.add("hide");
+                nextTab.classList.add("show");
+			}
+			else 
+				if (thisTab.classList.contains("last-tab") == true )
+				{
+					thisTab.classList.remove("show");
+                    thisTab.classList.add("hide");
+					var htmlCode = 
+ 						"<div class='ending fade-in'> <span><b class='x'>Tuyệt vời!</b> Bạn đã hoàn thành bài học ngày hôm nay. </span><span>Chúc bạn luôn học tập thật tốt nhé! &#128521;</span> <img src='./assets/img/chummy_chum_chums.png' class='y'> </div>";
+					document.querySelector(".vocabulary-course").insertAdjacentHTML("beforeend",htmlCode);	
+				}
+				else {
+					thisTab.classList.remove("show");
+                    thisTab.classList.add("hide");
+                    nextTab.classList.add("show");
+				}
+			thisTab.classList.remove("js-tab");			/* Remove this tab from js-tab lists */
+			thisTab.classList.add("js-tab__disabled");
+			
+			if (thisTab.classList.contains("quiz"))
+			{
+				thisTab.classList.remove("quiz");		
+				thisTab.classList.add("quiz__disabled");
+			}
+			if (thisTab.classList.contains("flashcard"))
+			{
+				thisTab.classList.remove("flashcard");		
+				thisTab.classList.add("flashcard__disabled");
+			}
+			
+        }
+    </script>
+	<script>
+		function playAudio(x) {
+			document.getElementById(x).play();
+		}
+	</script>
+	<script src="./assets/js/memory_card_game.js"></script>
+	<script src="./assets/js/course/vocabulary_topic_thinking_and_learning.json"></script>
+	<script src="./assets/js/course/course.js"></script>
+	<!---	Flip the Flashcards	  --->
+	<script>
+		function flipFlashcard() {
+			var flashcard = document.querySelector('.js-tab .flashcard__form');
+			flashcard.classList.toggle('flipped');
+		}
+	</script>
+	
+</body>
+</html>
